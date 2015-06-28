@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MoneyTracker_dev</string>
+    <string name="activity_createAccount">Create Account</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Tab Names -->
+    <string name="tab_title_1">Transaction</string>
+    <string name="tab_title_2">Account</string>
+    <string name="tab_title_3">Graphs</string>
+
+    <!-- Strings for Tabs -->
+    <string name="manage_accounts">Account Manager</string>
+
+    <!-- Common Strings -->
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="manager">Manager</string>
+
+    <!-- Create Account -->
+    <string name="account_name">Name</string>
+    <string name="account_type">Type</string>
+    <string name="account_balance">Balance</string>
+    <string name="account_paymentDate">Payment Date</string>
+    <string name="account_billingDate">Billing Date</string>
+    <string name="account_paidFrom">Paid From</string>
+
+    <string name="account_hint_name">Type new name</string>
+    <string name="account_hint_type">Select type</string>
+    <string name="account_hint_balance">Insert balance</string>
+    <string name="account_hint_paymentDate">Pick Payment Date</string>
+    <string name="account_hint_billingDate">Pick Billing Date</string>
+    <string name="account_hint_paidFrom">Pick source</string>
+
+    <!-- Error Messages -->
+    <string name="loading_error">Loading Error</string>
+    <string name="account_listEmpty">No Account Found</string>
+</resources>

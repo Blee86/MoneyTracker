@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="10">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/listView_accountList">
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/GreenYellow"
+        android:id="@+id/account_emptyListView"
+        android:text="@string/account_listEmpty"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/Gray"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/manage_accounts"
+        android:id="@+id/btn_manageAccount"/>
+</LinearLayout>
+<!-- From: file:/Users/yosublee/AndroidStudioProjects/MoneyTracker_dev2/app/src/main/res/layout/fragment_accounts.xml -->

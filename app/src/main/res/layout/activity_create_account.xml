@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+
+    <TableRow
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ripple_material_light"
+            android:text="@string/account_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/editText_accountName"
+            android:hint="@string/account_hint_name"/>
+    </TableRow>
+
+    <TableRow
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ripple_material_light"
+            android:text="@string/account_type"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_accountType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+
+            android:spinnerMode="dropdown" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ripple_material_light"
+            android:text="@string/account_balance"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/editText_accountBalance"
+            android:inputType="number"
+            android:hint="@string/account_hint_balance"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_paymentDate"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ripple_material_light"
+            android:text="@string/account_paymentDate"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/btn_accountPaymentDate"
+            android:hint="@string/account_hint_paymentDate"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_accountFrom"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ripple_material_light"
+            android:text="@string/account_paidFrom"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/btn_accountFrom"
+            android:hint="@string/account_hint_paidFrom"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_billingDate"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ripple_material_light"
+            android:text="@string/account_billingDate"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/btn_accountBilling"
+            android:hint="@string/account_hint_billingDate"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btn_manage_AccountType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_span="2"
+            android:text="@string/manager"
+            />
+    </TableRow>
+    <TableRow>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_span="2"
+            android:weightSum="4"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/confirm"
+                android:id="@+id/btn_Confirm" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/cancel"
+                android:id="@+id/btn_Cancel" />
+        </LinearLayout>
+    </TableRow>
+
+
+</TableLayout>
